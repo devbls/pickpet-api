@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  run:
+    container_name: primeinternational-db-container
+    environment:
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+    ports:
+      - '5432:5432'
+    image: postgres
